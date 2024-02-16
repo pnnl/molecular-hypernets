@@ -77,11 +77,11 @@ def get_usi(task, scan_id):
 
 def get_MS2_dash(usi):
     params = {"usi1": usi}
-    return "https://metabolomics-usi.ucsd.edu/dashinterface/?{}".format(parse.urlencode(params))
+    return "https://metabolomics-usi.gnps2.org/dashinterface/?{}".format(parse.urlencode(params))
 
 def get_MS2_png(usi):
     params = {"usi1": usi}
-    return "https://metabolomics-usi.ucsd.edu/png/?{}".format(parse.urlencode(params))
+    return "https://metabolomics-usi.gnps2.org/png/?{}".format(parse.urlencode(params))
 
 def display_spectra(usi):
     img_url = get_MS2_png(usi)
